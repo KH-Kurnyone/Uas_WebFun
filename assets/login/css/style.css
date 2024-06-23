@@ -10854,9 +10854,7 @@ h5,
   .bg-login-mobile {
     display: none;
   }
-  .container-mobile {
-    padding-top: 20%;
-  }
+  
   /* .btn-login-mobile {
         position: absolute;
         display: flex;
