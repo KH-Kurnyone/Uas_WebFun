@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Voucher - Twogether Store</title>
+    <!-- Icon -->
+    <link href="assets/images/logos/icon.png" rel="icon" />
+    <link href="assets/images/logos/icon.png" rel="apple-touch-icon" />
+    <link href="/assetsadmin/img/favicon.png" rel="icon" />
+    <link href="/assetsadmin/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="assets/others/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+
+    <!-- Gratis ongkor 1 -->
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+      }
+
+      h2 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .card {
+        background-color: #f2f2f2;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+      }
+
+      .card h3 {
+        margin-top: 0;
+      }
+
+      .card p {
+        margin-bottom: 10px;
+      }
+
+      .button {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .button:hover {
+        background-color: #0056b3;
+      }
+
+      .last-card {
+        text-align: center;
+      }
+
+      .last-card .button {
+        display: inline-block;
+        margin-top: 10px;
+      }
+    </style>
+
+    <!-- Gratis Ongir 2 -->
+    <style>
+      body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .coupon {
+        background-color: #ff3385;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 140px;
+      }
+      .coupon h2 {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+
+      .coupon p {
+        color: #fff;
+        margin-bottom: 10px;
+      }
+      .coupon button {
+        background-color: #fff;
+        border: none;
+        border-radius: 5px;
+        color: #ff3385;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .coupon button:hover {
+        background-color: #ff69b4;
+        color: #fff;
+      }
+
+      .super {
+        background-color: #fff;
+        color: #ff3385;
+        border-radius: 50%;
+        padding: 5px 10px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 10px;
+      }
+
+      .link {
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+      }
+
+      .link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+
+  <body class="card-animation">
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <!-- <a href="index.html" class="text-nowrap logo-img">
+            <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a> -->
+            <div class="d-flex justify-content-center">
+              <img src="assets/images/logos/logo.png" alt="Logo" width="20%" />
+              <h5 class="text-default mt-3" style="font-weight: bold">Twogether Store</h5>
+            </div>
+            <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <div class="border border-dark mx-4" style="opacity: 0.3"></div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            <ul id="sidebarnav">
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">MENU DASHBOARD</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="dashboard.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-bag fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Produk</span>
+                </a>
+              </li>
+              <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">UI COMPONENTS</span>
+            </li> -->
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pesanan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-card-text fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pesanan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="riwayat.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-clock-history fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Riwayat</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="keranjang.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-cart3 fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Keranjang</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="voucher.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-receipt fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Voucher</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="ui-typography.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-typography"></i>
+                </span>
+                <span class="hide-menu">Typography</span>
+              </a>
+            </li> -->
+              <div class="border border-dark mt-3" style="opacity: 0.5"></div>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">LAINNYA</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pengaturan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-gear fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pengaturan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="akun.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-person fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Akun</span>
+                </a>
+              </li>
+              <div class="border border-dark mt-4" style="opacity: 0.5"></div>
+              <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">EXTRA</span>
+            </li> -->
+              <li class="sidebar-item mt-3">
+                <a class="sidebar-link text-danger" href="index.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-box-arrow-left fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Log Out</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="sample-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Sample Page</span>
+              </a>
+            </li> -->
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+
+      <div class="body-wrapper">
+        <!-- Header -->
+        <header class="app-header" style="background-color: #e4ceff">
+          <h1 class="p-5"><i class="bi bi-arrow-left"></i>Pusat Voucher</h1>
+        </header>
+
+        <!-- Content -->
+        <div class="container-fluid" style="background-color: #e4ceff">
+          <!-- Gratis Ongkir ke 1 -->
+          <div style="margin-top: 70px">
+            <h1>Gratis Ongkir</h1>
+            <div class="row container">
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp20rb</h2>
+                <p>Voucher ongkir untuk pesanan di atas Rp30 rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp15rb</h2>
+                <p>Voucher ongkir untuk pesanan di atas Rp30 rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp30rb</h2>
+                <p>Voucher ongkir untuk pesanan di atas Rp80rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp30rb</h2>
+                <p>Voucher ongkir untuk pesanan di atas Rp70rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <h2>Diskon Rp20rb</h2>
+                <p>untuk pesanan di atas Rp120rb</p>
+                <p>Kadaluarsa dalam 14 jam</p>
+                <button class="button">Klaim</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Gratis Ongkir ke 2 -->
+          <div class="mt-3">
+            <h1>Kupon eksklusif</h1>
+            <div class="container row">
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp15rv</h2>
+                <p>untuk pesanan di atas Rp15.000 rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp15rb</h2>
+                <p>untuk pesanan di atas Rp15.001 rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp15rb</h2>
+                <p>untuk pesanan di atas Rp15.001 rb</p>
+                <button>Klaim</button>
+              </div>
+              <div class="coupon col-lg-2 mx-1">
+                <span class="super">SUPER</span>
+                <h2>Diskon Rp15rb</h2>
+                <p>untuk pesanan di atas Rp15.001 rb</p>
+                <button>Klaim</button>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="link">Lihat sumua voucher</a>
+        </div>
+      </div>
+    </div>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+  </body>
+</html>

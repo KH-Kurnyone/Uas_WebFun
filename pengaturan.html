@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pengaturan - Twogether Store</title>
+    <!-- Icon -->
+    <link href="assets/images/logos/icon.png" rel="icon" />
+    <link href="assets/images/logos/icon.png" rel="apple-touch-icon" />
+    <link href="/assetsadmin/img/favicon.png" rel="icon" />
+    <link href="/assetsadmin/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="assets/others/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        width: 50%;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .section {
+        margin-bottom: 30px;
+      }
+      .section h2 {
+        font-size: 18px;
+      }
+      .section p {
+        margin: 5px 0;
+      }
+      .toggle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+      }
+      .toggle input {
+        appearance: none;
+        width: 40px;
+        height: 20px;
+        background: #ccc;
+        border-radius: 10px;
+        position: relative;
+        outline: none;
+        cursor: pointer;
+      }
+      .toggle input:checked {
+        background: #4caf50;
+      }
+      .toggle input:checked::before {
+        left: 20px;
+      }
+      .toggle input::before {
+        content: '';
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        background: #fff;
+        border-radius: 50%;
+        top: 1px;
+        left: 1px;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+
+  <body class="card-animation">
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <!-- <a href="index.html" class="text-nowrap logo-img">
+            <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a> -->
+            <div class="d-flex justify-content-center">
+              <img src="assets/images/logos/logo.png" alt="Logo" width="20%" />
+              <h5 class="text-default mt-3" style="font-weight: bold">Twogether Store</h5>
+            </div>
+            <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <div class="border border-dark mx-4" style="opacity: 0.3"></div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            <ul id="sidebarnav">
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">MENU DASHBOARD</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="dashboard.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-bag fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Produk</span>
+                </a>
+              </li>
+              <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">UI COMPONENTS</span>
+            </li> -->
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pesanan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-card-text fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pesanan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="riwayat.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-clock-history fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Riwayat</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="keranjang.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-cart3 fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Keranjang</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="voucher.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-receipt fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Voucher</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="ui-typography.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-typography"></i>
+                </span>
+                <span class="hide-menu">Typography</span>
+              </a>
+            </li> -->
+              <div class="border border-dark mt-3" style="opacity: 0.5"></div>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">LAINNYA</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pengaturan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-gear fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pengaturan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="akun.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-person fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Akun</span>
+                </a>
+              </li>
+              <div class="border border-dark mt-4" style="opacity: 0.5"></div>
+              <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">EXTRA</span>
+            </li> -->
+              <li class="sidebar-item mt-3">
+                <a class="sidebar-link text-danger" href="index.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-box-arrow-left fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Log Out</span>
+                </a>
+              </li>
+              <!-- <li class="sidebar-item">
+              <a class="sidebar-link" href="sample-page.html" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+                <span class="hide-menu">Sample Page</span>
+              </a>
+            </li> -->
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+
+      <div class="body-wrapper">
+        <!-- Header -->
+        <header class="app-header" style="background-color: #e4ceff">
+          <h1 class="p-5 text-center">Pengaturan Notifikasi</h1>
+          <h2></h2>
+        </header>
+
+        <!-- Content -->
+        <div class="container-fluid" style="background-color: #e4ceff"></div>
+        <div class="container">
+          <div class="section">
+            <h2>Notifikasi Email</h2>
+            <div class="toggle">
+              <span>Status Pesanan</span>
+              <input type="checkbox" checked />
+            </div>
+            <div class="toggle">
+              <span>Promosi</span>
+              <input type="checkbox" checked />
+            </div>
+            <div class="toggle">
+              <span>Survei Pembeli</span>
+              <input type="checkbox" />
+            </div>
+          </div>
+          <div class="section">
+            <h2>Notifikasi SMS</h2>
+            <div class="toggle">
+              <span>Promosi</span>
+              <input type="checkbox" checked />
+            </div>
+          </div>
+          <div class="section">
+            <h2>Notifikasi WhatsApp</h2>
+            <div class="toggle">
+              <span>Pesanan</span>
+              <input type="checkbox" checked />
+            </div>
+            <div class="toggle">
+              <span>Promosi</span>
+              <input type="checkbox" checked />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+  </body>
+</html>

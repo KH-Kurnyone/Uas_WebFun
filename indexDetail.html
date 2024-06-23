@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Produk - Twogether Store</title>
+    <!-- Icon -->
+    <link href="assets/images/logos/icon.png" rel="icon" />
+    <link href="assets/images/logos/icon.png" rel="apple-touch-icon" />
+    <link href="/assetsadmin/img/favicon.png" rel="icon" />
+    <link href="/assetsadmin/img/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="assets/others/bootstrap-icons/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/styles.min.css" />
+  </head>
+
+  <body class="card-animation">
+    <!-- Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-navbarbg="skin6" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <!-- <a href="index.html" class="text-nowrap logo-img">
+            <img src="assets/images/logos/dark-logo.svg" width="180" alt="" />
+          </a> -->
+            <div class="d-flex justify-content-center">
+              <img src="assets/images/logos/logo.png" alt="Logo" width="20%" />
+              <h5 class="text-default mt-3" style="font-weight: bold">Twogether Store</h5>
+            </div>
+            <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <div class="border border-dark mx-4" style="opacity: 0.3"></div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
+            <ul id="sidebarnav">
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">MENU DASHBOARD</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="indexDetail.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-bag fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Produk</span>
+                </a>
+              </li>
+              <!-- <li class="nav-small-cap">
+              <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+              <span class="hide-menu">UI COMPONENTS</span>
+            </li> -->
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pesanan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-card-text fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pesanan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="riwayat.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-clock-history fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Riwayat</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="keranjang.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-cart3 fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Keranjang</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="voucher.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-receipt fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Voucher</span>
+                </a>
+              </li>
+              <div class="border border-dark mt-3" style="opacity: 0.5"></div>
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">LAINNYA</span>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="pengaturan.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-gear fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Pengaturan</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="akun.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-person fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Akun</span>
+                </a>
+              </li>
+              <div class="border border-dark mt-4" style="opacity: 0.5"></div>
+              <li class="sidebar-item mt-3">
+                <a class="sidebar-link text-danger" href="index.html" aria-expanded="false">
+                  <span>
+                    <i class="bi bi-box-arrow-left fs-5"></i>
+                  </span>
+                  <span class="hide-menu">Log Out</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!--  Sidebar End -->
+      <!--  Main wrapper -->
+      <div class="body-wrapper">
+        <!--  Header Start -->
+        <header class="app-header" style="background-color: #e4ceff">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav">
+              <li class="nav-item d-block d-xl-none">
+                <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                  <i class="bi bi-arrow-left" style="font-size: 35px"></i>
+                </a>
+              </li>
+              <div class="mt-2 mobile">
+                <h3>
+                  <a href="dashboard.html"><i class="bi bi-arrow-left me-2" style="font-size: 30px; color: #b041ff; font-weight: bold"></i></a> Detail Produk
+                </h3>
+              </div>
+            </ul>
+            <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+              <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+                <div class="col-lg-12" style="position: relative">
+                  <i class="bi bi-search fs-5 mt-1 ms-2" style="position: absolute"></i>
+                  <input type="text" placeholder="        Cari Produk ...." class="form-control bg-white" />
+                </div>
+                <!-- <a href="https://adminmart.com/product/modernize-free-bootstrap-admin-dashboard/" target="_blank" class="btn btn-primary">Download Free</a> -->
+                <li class="nav-item dropdown">
+                  <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="assets/images/profile/profile.webp" alt="" width="45" height="45" class="rounded-circle border border-white border-2" />
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                    <div class="message-body">
+                      <a href="akun.html" class="d-flex align-items-center gap-2 dropdown-item">
+                        <i class="ti ti-user fs-6"></i>
+                        <p class="mb-0 fs-3">My Profile</p>
+                      </a>
+                      <a href="index.html" class="btn btn-outline-danger mx-3 py-1 mt-3 d-block"><i class="bi bi-box-arrow-left fs-5 my-auto"></i> Logout</a>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </header>
+        <!--  Header End -->
+        <div class="container-fluid" style="background-color: #e4ceff">
+          <div class="card px-3 py-4 rounded-4">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 mb-3">
+                <!-- <img src="assets/images/products/sepatu3.jpeg" alt="gambar_produk" class="rounded-4 img-det" /> -->
+                <div id="carouselExampleIndicators" class="carousel slide img-det">
+                  <!-- <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  </div> -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/products/sepatu3.jpeg" class="d-block w-100 rounded-2" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/products/sepatu6.jpg" class="d-block w-100 rounded-2" alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/products/sepatu8.jpeg" class="d-block w-100 rounded-2" alt="..." />
+                    </div>
+                  </div>
+                  <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button> -->
+                </div>
+                <div class="mt-3">
+                  <a style="cursor: pointer" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img src="assets/images/products/sepatu3.jpeg" alt="..." class="rounded-2 me-1" width="20%" />
+                  </a>
+                  <a style="cursor: pointer" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img src="assets/images/products/sepatu6.jpg" alt="..." class="rounded-2 mx-1" width="20%" />
+                  </a>
+                  <a style="cursor: pointer" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                    <img src="assets/images/products/sepatu8.jpeg" alt="..." class="rounded-2 ms-1" width="20%" />
+                  </a>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6">
+                <h1 class="text-det" style="font-weight: bold">Jordan Original</h1>
+                <p class="text-det">Rasakan perpaduan sempurna antara gaya dan kenyamanan dengan sepatu Jordan, ikon dalam dunia fashion dan olahraga. Terinspirasi dari legenda basket Michael Jordan, sepatu ini dirancang untuk memberikan performa optimal di lapangan dan tampilan menawan di jalanan.</p>
+                <div class="d-flex mt-2 text-det">
+                  <p class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</p>
+                  <p class="mx-2 mt-1">|</p>
+                  <p class="mt-1"><i class="ti ti-star text-warning"></i> 4.7</p>
+                  <p class="mx-2 mt-1">|</p>
+                  <p class="mt-1">2.1K Terjual</p>
+                </div>
+                <h3 class="fw-semibold text-det">
+                  <span class="text-danger">Rp260.000</span> <span class="ms-2 fw-normal text-muted"><del>Rp290.000</del></span>
+                </h3>
+                <p class="text-det text-warning"><i class="bi bi-award-fill fs-5"></i> Twogether Store Garansi 100% Ori</p>
+                <div class="row text-det">
+                  <div class="col-lg-3 col-4">Voucher Toko</div>
+                  <div class="col-lg-9 col-8">Rp20RB OFF</div>
+                </div>
+                <div class="row text-det mt-1">
+                  <div class="col-lg-3 col-4">Return</div>
+                  <div class="col-lg-9 col-8">Bebas Pengembalian</div>
+                </div>
+                <div class="row text-det mt-1">
+                  <div class="col-lg-3 col-4">Pengiriman</div>
+                  <div class="col-lg-9 col-8">Gratis Ongkir</div>
+                </div>
+                <div class="row text-det mt-1">
+                  <div class="col-lg-3 col-4">Tersisa</div>
+                  <div class="col-lg-9 col-8">1.870 Produk</div>
+                </div>
+                <div class="text-det mt-3">
+                  <h4 class="me-4">Ukuran</h4>
+                  <div class="d-flex">
+                    <a href="#" class="text-dark"><p class="border border-dark py-1 px-2 rounded-2 mx-1">39</p></a>
+                    <a href="#" class="text-dark"><p class="border border-dark py-1 px-2 rounded-2 mx-1">40</p></a>
+                    <a href="#" class="text-dark"><p class="border border-dark py-1 px-2 rounded-2 mx-1">41</p></a>
+                    <a href="#" class="text-dark"><p class="border border-dark py-1 px-2 rounded-2 mx-1">42</p></a>
+                    <a href="#" class="text-dark"><p class="border border-dark py-1 px-2 rounded-2 mx-1">43</p></a>
+                  </div>
+                </div>
+                <div class="text-det">
+                  <h4 class="my-auto me-3">Kuantitas</h4>
+                  <div class="input-group mt-1">
+                    <button class="btn input border-dark"><i class="bi bi-dash-lg"></i></button>
+                    <div class="col-lg-1 col-2">
+                      <input type="text" placeholder="1" class="form-control border-dark rounded-0" />
+                    </div>
+                    <button class="btn input border-dark"><i class="bi bi-plus-lg"></i></button>
+                  </div>
+                </div>
+                <div class="d-flex text-det mt-4">
+                  <button class="btn btn-cart2 py-lg-3 px-lg-4 rounded-1"><i class="bi bi-cart-plus fs-5 me-2"></i> Masukkan Keranjang</button>
+                  <button class="btn btn-cart text-white py-lg-3 px-lg-5 rounded-1 mx-2"><i class="bi bi-cart-check fs-5 me-2"></i>Beli Sekarang</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8">
+              <div class="card p-3 rounded-4">
+                <h4 style="font-weight: bold">Spesifikasi Produk</h4>
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-4">Merek</div>
+                  <div class="col-lg-9 col-8">Air Jordan</div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-4">Kategori</div>
+                  <div class="col-lg-9 col-8">Sepatu Sport / Fashion</div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-4">Bahan</div>
+                  <div class="col-lg-9 col-8">Suede, kulit sintetis, dan knit dam nylon</div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-4">Tinggi Sepatu</div>
+                  <div class="col-lg-9 col-8">Rendah</div>
+                </div>
+                <div class="row mt-1">
+                  <div class="col-lg-3 col-4">Dikirim Dari</div>
+                  <div class="col-lg-9 col-8">Jakarta Barat</div>
+                </div>
+                <h4 class="mt-4" style="font-weight: bold">Deskripsi Produk</h4>
+                <div class="mb-2">Available size</div>
+                <div>EUR 39 // US 6.5 // CM 24.5 //</div>
+                <div>EUR 40 // US 7 // CM 25 //</div>
+                <div>EUR 41 // US // 8 // CM 26 //</div>
+                <div>EUR 42 // US 8.5 // CM 26.5 //</div>
+                <div>EUR 43 // US 9.5 // CM 27.5 //</div>
+                <div class="mt-2">Biar tidak bingung memilih size, untuk pengukuran kaki nya memakai acuan cm(centimeter). Kakinya bisa diukur dulu menggunakan penggaris. Setelah itu bisa ditentukan nanti size nya sesuai keterangan size yg ada di gambar size chart.</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card p-3 rounded-4">
+                <div class="row">
+                  <div class="col-4">
+                    <img src="assets/images/profile/profile.jpg" alt="Profile" class="rounded-pill" width="100%" />
+                  </div>
+                  <div class="col-8 my-auto">
+                    <h5 style="font-weight: bold">Nama Pemilik Toko</h5>
+                    <div style="margin-top: -10px">
+                      <small>Aktif 12 Menit Lalu</small>
+                    </div>
+                    <div class="d-flex mt-2">
+                      <small class="me-1 bg-default cursor-pointer p-1 text-white rounded-1">Chat Sekarang</small>
+                      <small class="ms-1 bg-default cursor-pointer p-1 text-white rounded-1">Kunjungi Toko</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card p-3 rounded-4">
+            <h4 style="font-weight: bold">Penilaian Produk</h4>
+            <div class="p-4 rounded-1" style="background-color: #f5ecff">
+              <div class="row">
+                <div class="col-lg-2 my-auto">
+                  <h3 class="text-danger">4.7 dari 5</h3>
+                  <div class="d-flex">
+                    <h4 class="text-danger"><i class="bi bi-star-fill"></i></h4>
+                    <h4 class="text-danger"><i class="bi bi-star-fill"></i></h4>
+                    <h4 class="text-danger"><i class="bi bi-star-fill"></i></h4>
+                    <h4 class="text-danger"><i class="bi bi-star-fill"></i></h4>
+                    <h4 class="text-danger"><i class="bi bi-star-half"></i></h4>
+                  </div>
+                </div>
+                <div class="col-lg-10">
+                  <div class="d-lg-flex">
+                    <div class="bg-white cursor-pointer py-2 px-4 mx-1 my-1 text-center text-default rounded-1 border-default">Semua</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 my-1 text-center rounded-1 btn-rating">5 Bintang (575)</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 my-1 text-center rounded-1 btn-rating">4 Bintang (521)</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 my-1 text-center rounded-1 btn-rating">3 Bintang (490)</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 my-1 text-center rounded-1 btn-rating">2 Bintang (377)</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 my-1 text-center rounded-1 btn-rating">1 Bintang (108)</div>
+                  </div>
+                  <div class="d-flex mt-2">
+                    <div class="bg-white cursor-pointer p-2 mx-1 text-center rounded-1 btn-rating">Dengan Komentar (3,9RB)</div>
+                    <div class="bg-white cursor-pointer p-2 mx-1 text-center rounded-1 btn-rating">Dengan Media (1,7RB)</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-lg-1 col-3">
+                <img src="assets/images/profile/profile.jpg" alt="Profile" class="rounded-pill" width="100%" />
+              </div>
+              <div class="col-lg-11 col-9">
+                <div class="fs-5 text-dark" style="font-weight: bold">Seseorang 1</div>
+                <div class="d-flex">
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                </div>
+                <small>16/05/2024 15:56</small>
+                <div class="me-5 mt-2 text-mobile">Sepatu ini benar-benar keren dan memberikan kenyamanan maksimal. Desainnya stylish dan pastinya bakal bikin kamu jadi pusat perhatian di mana saja. Selain tampilan yang memukau, kualitasnya juga tidak perlu diragukan lagi. Semoga sepatu ini membawa banyak keberuntungan dan menambah semangat dalam setiap langkahmu. Nikmati pengalaman memakai sepatu dengan performa terbaik! 🔥</div>
+                <div class="mt-2" style="opacity: 0.7"><i class="bi bi-heart-fill cursor-pointer"></i> 967</div>
+              </div>
+            </div>
+            <div class="border my-4 mx-3"></div>
+            <div class="row">
+              <div class="col-lg-1 col-3">
+                <img src="assets/images/profile/profile.jpg" alt="Profile" class="rounded-pill" width="100%" />
+              </div>
+              <div class="col-lg-11 col-9">
+                <div class="fs-5 text-dark" style="font-weight: bold">Seseorang 2</div>
+                <div class="d-flex">
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-half"></i></div>
+                </div>
+                <small>05/05/2024 09:14</small>
+                <div class="me-5 mt-2 text-mobile">Pelayanan di toko sangat ramah dan membantu, membuat proses pembelian jadi sangat menyenangkan. Sepatunya sendiri luar biasa! Desainnya keren dan nyaman dipakai, benar-benar mencerminkan kualitas premium yang selalu dijanjikan Jordan. Tidak sabar untuk memakainya dan menunjukkan ke teman-teman. Terima kasih banyak atas pelayanan yang luar biasa!</div>
+                <div class="mt-2" style="opacity: 0.7"><i class="bi bi-heart-fill cursor-pointer"></i> 752</div>
+              </div>
+            </div>
+            <div class="border my-4 mx-3"></div>
+            <div class="row">
+              <div class="col-lg-1 col-3">
+                <img src="assets/images/profile/profile.jpg" alt="Profile" class="rounded-pill" width="100%" />
+              </div>
+              <div class="col-lg-11 col-9">
+                <div class="fs-5 text-dark" style="font-weight: bold">Seseorang 3</div>
+                <div class="d-flex">
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-fill"></i></div>
+                  <div class="text-danger"><i class="bi bi-star-half"></i></div>
+                  <div class="text-danger"><i class="bi bi-star"></i></div>
+                </div>
+                <small>30/04/2024 11:03</small>
+                <div class="me-5 mt-2 text-mobile">Baru saja keluar dari toko dengan sepatu Jordan baru, dan rasanya sangat puas! Sepatunya benar-benar keren dan nyaman, persis seperti yang saya harapkan dari Jordan. Kualitasnya tidak perlu diragukan lagi. Terima kasih atas layanan yang hebat dan produk yang fantastis! Tidak sabar untuk segera memakainya!</div>
+                <div class="mt-2" style="opacity: 0.7"><i class="bi bi-heart-fill cursor-pointer"></i> 554</div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-end me-5 mt-4">
+              <button class="btn btn-cart text-white rounded-1">Lainnya <i class="bi bi-arrow-right"></i></button>
+            </div>
+          </div>
+
+          <!-- Rekomendasi -->
+          <div id="rekomendasi" class="mt-5">
+            <h4 class="mb-3" style="font-weight: bold"><i class="bi bi-columns-gap"></i> Rekomendasi Lainnya</h4>
+            <div style="position: relative">
+              <a href="#"><i class="bi bi-arrow-right bg-white btn-next text-default rounded-pill"></i></a>
+              <div class="scroll-container d-flex">
+                <!-- produk rekomendasi 2 -->
+                <div class="col-6 col-xl-3 me-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu.jpg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Putih Nike</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold mb-0 text-mobile">
+                          <span class="text-danger">Rp97.650</span> <span class="ms-2 fw-normal text-muted"><del>Rp110.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.1</small>
+                          <small class="mx-2">|</small>
+                          <small>978 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 3 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu2.jpg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Hitam Casual</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp85.550</span> <span class="ms-2 fw-normal text-muted"><del>Rp90.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.5</small>
+                          <small class="mx-2">|</small>
+                          <small>1.5K Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 4 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu4.jpg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Hitam Nike</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp100.500</span> <span class="ms-2 fw-normal text-muted"><del>Rp120.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.2</small>
+                          <small class="mx-2">|</small>
+                          <small>890 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 5 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu5.jpg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Gaya Hitam Putih</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp98.000</span> <span class="ms-2 fw-normal text-muted"><del>Rp210.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.6</small>
+                          <small class="mx-2">|</small>
+                          <small>76 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 6 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu6.jpg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Jordan Hitam Merah</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp250.650</span> <span class="ms-2 fw-normal text-muted"><del>Rp500.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.3</small>
+                          <small class="mx-2">|</small>
+                          <small>50 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 7 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu7.jpeg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Sport Cream</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp87.650</span> <span class="ms-2 fw-normal text-muted"><del>Rp100.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.6</small>
+                          <small class="mx-2">|</small>
+                          <small>350 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- produk rekomendasi 8 -->
+                <div class="col-6 col-xl-3 mx-2 produk-hover">
+                  <div class="card overflow-hidden rounded-2">
+                    <div class="position-relative">
+                      <a href="javascript:void(0)"><img src="assets/images/products/sepatu8.jpeg" class="card-img-top rounded-0" alt="..." /></a>
+                      <a href="javascript:void(0)" class="btn-cart rounded-circle p-2 text-white d-inline-flex position-absolute bottom-0 end-0 mb-n3 me-3" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add To Cart"><i class="bi bi-cart3 px-1"></i></a>
+                    </div>
+                    <div class="card-body pt-3 p-4">
+                      <h6 class="fw-semibold text-mobile">Sepatu Jordan</h6>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <h6 class="fw-semibold text-mobile mb-0">
+                          <span class="text-danger">Rp99.650</span> <span class="ms-2 fw-normal text-muted"><del>Rp140.000</del></span>
+                        </h6>
+                      </div>
+                      <div class="mt-2">
+                        <small class="p-1 rounded-1 text-warning" style="background-color: rgb(255, 250, 236)"><i class="bi bi-ticket-perforated"></i> Bonus cashback 5%</small>
+                        <div class="d-flex mt-2">
+                          <small><i class="ti ti-star text-warning"></i> 4.2</small>
+                          <small class="mx-2">|</small>
+                          <small>150 Terjual</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mb-4">
+              <button class="btn btn-default text-white">Lihat Lainnya</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/sidebarmenu.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script src="assets/libs/simplebar/dist/simplebar.js"></script>
+  </body>
+</html>
