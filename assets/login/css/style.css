@@ -10854,7 +10854,16 @@ h5,
   .bg-login-mobile {
     display: none;
   }
+<<<<<<< HEAD
   
+=======
+/*   .top-mobile {
+    margin-top: -10%;
+  }   */
+/*   .container-mobile {
+    padding-top: 20%;
+  } */
+>>>>>>> a82f625265dc114f3bb071bdb1bebad04ddcac5c
   /* .btn-login-mobile {
         position: absolute;
         display: flex;
